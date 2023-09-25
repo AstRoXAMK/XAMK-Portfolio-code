@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+  
+:root{
+    --accent-1: #7a08fa;
+    --accent-2: #a82ffc;
+    --accent-3: #d189ff;
+    --color-code: #71ff71;
+    --color-red: #ff5959;
+    --color-white: #cccccc;
+    --color-black: #333333;
+    --color-black-1: #1f1f1f;
+    --color-transparent-accent: rgba(121, 8, 250, 0.103);
+}
+
+body{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: var(--color-white);
+    background: linear-gradient(to right, #28313b, #485461);
+}
+
+a{
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    font-family: inherit;
+}
+
+code{
+    color: var(--color-code);
+    font-size: 1.1rem;
+}
+
+.header{
+    color: var(--color-white);
+    overflow: hidden;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.subtitle{
+    font-size: 3rem;
+    color: var(--accent-2);
+}
+
+.section{
+    padding: 3rem 18rem;
+    font-size: 1.5rem;
+    margin-bottom: 6rem;
+
+    h3{
+        color: var(--accent-2);
+        font-size: 2.5rem;
+    }
+}
+
+.sec1{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+    
+}
+
+.sec2{
+    ul{
+        padding: 2rem 0;
+        color: var(--accent-3);
+    }
+}
+
+.sec3{
+
+    .timeline{
+        margin-top: 3rem;
+        min-height: 100%;
+
+        h4{
+        font-size: 1.5rem;
+        color: var(--color-white);
+            span{
+                color: var(--accent-3);
+            }
+        }
+
+        .timeline-item{
+            padding: 1.1rem 1rem;
+            width: 100%;
+            height: relative;
+            border-radius: 14px;
+            border-style: outset;
+            border-color: var(--accent-2);
+            background-color: var(--color-black);
+            position: relative;
+        }
+    }
+}
+
+.sec4{
+    .timeline-problems{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 3rem;
+        min-height: 100%;
+        grid-gap: 2rem;
+
+        .timeline-problems-item{
+        padding: 1.1rem 1rem;
+        width:  100%;
+        height: relative;
+        border-radius: 14px;
+        border-style: outset;
+        border-color: var(--accent-2);
+        background-color: var(--color-black);
+        position: relative;
+        }
+    }
+}
+
+.sec5{
+    margin-bottom: 6rem;
+
+    .conclusion-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 1.5rem auto;
+
+        h4{
+        font-size: 1.7rem;
+        }
+
+        p{
+        font-size: 1.4rem;
+        }
+
+        .beginner-title{
+        color: var(--color-code);
+        }
+
+        .advanced-title{
+        color: var(--color-red);
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: var(--color-black-1);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .footer-btn{
+        background-color: var(--color-black-1);
+        color: var(--color-white);
+        font-size: 1.4rem;
+        border: none;
+        font-family: inherit;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    a{
+        padding: 40% 0%;
+    }
+}
+
+@import '../styles/media_Peliprojekti';

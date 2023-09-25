@@ -1,0 +1,24 @@
+@media screen and (max-width: 1080px){
+    
+    body{
+        font-size: 1rem;
+    }
+    
+    .header{
+        font-size: 1.5rem;
+    }
+    
+    .section{
+        padding: 3rem 1rem;
+    }
+
+    .sec1{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+        img{
+            width: 100%;
+            margin: 1.5rem auto;
+        }
+    }
+}
