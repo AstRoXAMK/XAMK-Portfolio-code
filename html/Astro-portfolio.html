@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Astro JS portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../styles/Astro.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body class="main-content">
+        <main>
+            <header class="header">
+                <h1>Personal Portfolio  </h1>
+                <span class="subtitle">Made with Astro JS</span>
+            </header>
+            <div class="section sec1" id="home">
+                <div>
+                    <p>
+                        Astro JS is a new JavaScript framework which whole 
+                        stitch is the use or lack there of JavaScript.
+                        When I first dove into JavaScript, it was a whole lot of speghetti 
+                        that I did not really like to work in.
+                        That is not to say that you cannot use JavaScript, in fact
+                        the framework allows the creators to add their favourite JS Frameworks
+                        into the project. 
+                        <p class="additional">
+                            For more information <a href="https://astro.build">visit the site</a> here.
+                        </p>
+                    <p>
+                        Note: Of course the framework does not support every single
+                        JS Framework but for the most part it does allow for the 
+                        most used Frameworks to exist. Such as ReactJS, VueJS, Solid.JS and Svelte.
+                    </p>
+                        <p class="additional">
+                            Astro JS also allows for support on Tailwind CSS for responsive 
+                            web design but feel free to visit the full list of integratable
+                            add-ons <a href="https://astro.build/integrations/">here</a>
+                        </p>
+                    </p>
+                </div>
+                <div>
+                    <img src="../img/Asrtro-frameworks.png" alt="" class="title-img" width="100%">
+                </div>
+            </div>
+            <div class="section sec2" id="overall">
+                <div>
+                    <h2>Overall things to report</h2>
+                    <p> 
+                        Stylistic choices:
+                    </p>
+                    <ul>
+                        <li>
+                            Poppins for the font
+                        </li>
+                        <li>
+                            The background is a gradient from a darker cyan colour
+                            to a darker purple and this colour scheme will be used
+                            for the rest of the pages as well 
+                        </li>
+                        <li>
+                            Text colour is white
+                        </li>
+                        <li>
+                            The titles use a variation of purple and cyan 
+                        </li>
+                    </ul>
+                    <p class="overall-text">
+                        The layouts for the pages utilize a BaseLayout component that 
+                        contains the footer, contacts and the navigation bar. The head 
+                        tag for the page is also found in the BaseLayout component.
+                    </p>
+                    <p class="overall-text">
+                        The pages themselves mostly consists from preview components that
+                        show cards with most of them containing a link to a page that renders
+                        a markdown file. The markdown file is then rendered into HTML and then
+                        displayed on the page.
+                    </p>
+                </div>
+            </div>
+            <div class="section sec3" id="progress">    
+                <div class="progress">
+                    <div>
+                        <h4 class="pages title">Pages</h4>
+                        <div class="progress-item" id="landing-page">
+                            <h4 class="complete">Landing page</h4>
+                            <p>
+                                Image of the finished page:
+                                <div class="img-container">
+                                    <img src="../img/landing_page.png" alt="Front page" >
+                                </div>
+                                I utilized Astro JS components for the footer and nav bar, but 
+                                the navbar still requires some work to be done. I also used 
+                                Typed.js for the text under my name for extra effect.
+                            </p>
+                        </div>
+                        <div class="progress-item" id="about-page">
+                            <h4 class="complete">About page</h4>
+                            <p>
+                                Image of the finished page:
+                                <div class="img-container">
+                                    <img src="../img/about_page.png" alt="About page" >
+                                </div>
+                                For the about page I used a component named AboutMePreview.
+                                This component will be talked about later. Essentially it maps a folder
+                                full of markdown files and then renders a fraction of the file into a card.
+                                This page contains information about my education and other work 
+                                related courses and certificates. The about page is also capable of
+                                setting the different parts in order of date.
+                            </p>
+                        </div>
+                        <div class="progress-item" id="projects-page">
+                            <h4 class="complete">Projects page</h4>
+                            <p>
+                                Image of the finished page:
+                                <div class="img-container">
+                                    <img src="../img/projects_page.png" alt="Projects page">
+                                </div>
+                                The Projects page utilizes the same component as the About page, with 
+                                a different name, because in order to use the same component for different
+                                purposes, I had to render the folders in different components so that
+                                the pages would render the correct contents. This page contains a list of
+                                my main projects that I have worked on. The projects are ordered from the
+                                start date so, the newest projects are at the top.
+                            </p>
+                        </div>
+                        <div class="progress-item" id="articles-page">
+                            <h4 class="complete">Articles page</h4>
+                            <p>
+                                Image of the finished page:
+                                <div class="img-container">
+                                    <img src="../img/articles_page.png" alt="Articles page">
+                                </div>
+                                I have yet to write any real articles, but I still find the page
+                                to be useful for testing and when I eventually do write articles.
+                                The current articles are just placeholders for when I actually
+                                decide to write articles.
+                            </p>
+                        </div>
+                        <div class="progress-item" id="contact-page">
+                            <h4 class="complete">Contact page</h4>
+                            <p>
+                                Image of the finished page:
+                                <div class="img-container">
+                                    <img src="../img/contact_page.png" alt="Contact page">
+                                </div>
+                                This is the last page on my website. It is very simple.
+                                It also does not need to be very complicated as the main
+                                contact form is in a component that is used on every page.
+                                The contacts are the same as the XAMK portfolio one as I 
+                                do not see a reason to change it.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="components">
+                        <div>
+                            <h4 class="Mobile title">Mobile view</h4>
+                            <div class="progress-item">
+                                <h4>Landing Page</h4>
+                                <div class="img-container-mobile">
+                                    <img src="../img/landing_page_mobile.png" alt="Front page" >
+                                </div>
+                            </div>
+                            <div class="progress-item">
+                                <h4>Landing Page</h4>
+                                <div class="img-container-mobile">
+                                    <img src="../img/about_page_mobile.png" alt="Front page" >
+                                </div>
+                            </div>
+                            <div class="progress-item">
+                                <h4>Landing Page</h4>
+                                <div class="img-container-mobile">
+                                    <img src="../img/projects_page_mobile.png" alt="Front page" >
+                                </div>
+                            </div>
+                            <div class="progress-item">
+                                <h4>Landing Page</h4>
+                                <div class="img-container-mobile">
+                                    <img src="../img/articles_page_mobile.png" alt="Front page" >
+                                </div>
+                            </div>
+                            <div class="progress-item">
+                                <h4>Landing Page</h4>
+                                <div class="img-container-mobile">
+                                    <img src="../img/contact_page_mobile.png" alt="Front page" >
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="component title">Components</h4>
+                            <div class="progress-item" id="articles-page">
+                                <h4 class="complete">Contact Component</h4>
+                                <p>
+                                    The contact component holds a link to my CV and a link to
+                                    e-mail me. It is used on every page and is found in the BaseLayout.
+                                </p>
+                            </div>
+                            <div class="progress-item" id="articles-page">
+                                <h4 class="complete">Preview Components</h4>
+                                <p>
+                                    The preview components are used to render the markdown files partially
+                                    to the about, projects and articles page. The page that renders the markdown 
+                                    is in a <code>[...slug].astro</code> file and can be opened from the links 
+                                    in the preview component cards. All the correcsponding preview pages have 
+                                    their own slug pages.
+                                    <div class="img-container">
+                                        <img src="" alt="Rendered .md file">
+                                    </div>
+                                </p>
+                            </div>
+                            <div class="progress-item" id="articles-page">
+                                <h4 class="complete">Grid Component</h4>
+                                <p>
+                                    The grid component is used within the preview pages and 
+                                    it has two variants; an offset and a regular grid.
+                                    These can be seen in the different pages.
+                                </p>
+                            </div>
+                            <div class="progress-item" id="articles-page">
+                                <h4 class="complete">Navigation Components</h4>
+                                <p>
+                                    The navbar is again found on every page in the portfolio. There 
+                                    exists a premade astro component navbar, but I find it better to just
+                                    use my own. There is also a mobile navbar for mobile use.
+                                </p>
+                            </div>
+                            <div class="progress-item" id="articles-page">
+                                <h4 class="complete">Other Components</h4>
+                                <p>
+                                    These components are so miniscule in the grand scheme of things that 
+                                    I did not want to write about them individually. These include:
+                                    <ul>
+                                        <li>
+                                            Footer
+                                        </li>
+                                        <li>
+                                            Hero (title, subtitle, image and Search Engine Optimization (SEO) for the project pages)
+                                        </li>
+                                        <li>
+                                            CV_Download button
+                                        </li>
+                                    </ul>
+                                    They do exactly what you would expect them to do.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section sec4" id="problems">    
+                <h2>Problems: pages</h2>
+                <div>
+                    <h4>Landing page</h4>
+                    <p class="problem-text">
+                        While the landing page is simple, I had some trouble with it. 
+                        First of all the Typed.js part text does not change size via Tailwind CSS
+                        but instead a <<code>style</code>> tag had to be used to adjust the sizing.
+                        The Typed.js also uses a JavaScript code that determines my current grade 
+                        at XAMK and is automated to be working as the years go by.
+                    </p>
+                    <p class="problem-text">
+                        Overall Tailwind is convenient for most of the styling but requires
+                        the use of <<code>style</code>> tag for miniscule workarounds and 
+                        feels a lot simpler that the use of pure CSS or SCSS as I have been using
+                        for the most part.
+                    </p>
+                    <p class="problem-text">
+                        I decided to make some changes to the landing page. Over the next couple 
+                        of hours I changed the outlook, the font and other things in my portfolio.
+                        This includes the change in font, background colour and the overall look of the
+                        page became much more appealing.
+
+                    </p>
+                </div>
+                <div>
+                    <h4>Projects page</h4>
+                    <p class="problem-text">
+                        For most of my examples and tutorials I used this 
+                        <a href="https://stackblitz.com/github/withastro/astro/tree/latest/examples/portfolio?file=src%2Fcontent%2Fwork%2Fbloom-box.md">
+                            StackBlitz page
+                        </a> 
+                        containing a pre-built astro portfolio. I did not directly use it for everything, but used it
+                        as an example of how make an astro portfolio.
+                    </p>
+                    <p class="problem-text">
+                        The problems with the projects page are minimal. The only thing that I can think of is that
+                        the grid was a bit difficult to work with at first. Using the grid component and learning
+                        from how to make them in the future was a bit of a hassle. Using the afore mentioned StackBlitz
+                        page, I was able to create grid I used for all the pages.
+                    </p>
+                    <p class="problem-text">
+                        The best thing that I learned from working in the projects page was the use of a <br>
+                        <code>[...slug].astro</code>-element that allows for the rendering of markdown files. 
+                        I based the rest of my other pages on this slug element.
+                    </p>
+                </div>
+                <div>
+                    <h4>About page</h4>
+                    <p class="problem-text">
+                        The about page follows a similar structure to the projects page. The problematic part begins 
+                        when I wanted to create the about page in the same style as the projects page. I had never
+                        before workied with markdown files and had to learn how to render them into HTML correctly 
+                        and in the intended way. Since some of the elements in the about page were not meant to be
+                        markdown files, I did not want them to be links to a markdown file. 
+                    </p>
+                    <p class="problem-text">
+                        To change this the about page has a conditional operator that checks if the markdown file
+                        has a link or not. The ones with a link direct to the rendered markdown file and the ones
+                        that do not have a link do not do anything. To separate the working life and educational 
+                        lives, I simply just it so that the about page is split between school and work.
+                    </p>
+                    <p class="problem-text">
+                        The about page was the first where I tried to use the slug element in a different way compared
+                        to the projects page and since I do not have that much experience in JavaScript, I spent a 
+                        good chunck of time messing with it. Finally after a long time I was able to get it to work.
+                    </p>
+                </div>
+                <div>
+                    <h4>Articles page</h4>
+                    <p class="problem-text">
+                        As mentioned in the previous section, I have yet to write any articles. Moreover it currently
+                        works as a test page for when I inevidably return to edit the portfolio and add articles.
+                    </p>
+                </div>
+                <h2>Problems: Components</h2>
+                <div>
+                    <h4>Contact Component</h4>
+                    <p class="problem-text">
+                        The contact component is extremely simple in the sense that it really only holds a download
+                        link to my Cv and a mail link that auto-fills (hopefully) the senders receiver box with my
+                        e-mail. There really weren't any big problems. I just wasn't initially sure how often I 
+                        would like for it to be present. I decided that it can be a part of every page and just simply
+                        implemented it to the baseLayout.
+                    </p>
+                </div>
+                <div>
+                    <h4>Preview Components</h4>
+                    <p class="problem-text">
+                        This is where the problems begin. The first part, when I created the projects page, wasn't that bad,
+                        since I utilized the StackBlitz page. The problems began when I wanted to create the about page and 
+                        modify the data receival from the markdown files in a different folder. 
+                    </p>
+                    <p class="problem-text">
+                        The next part of the preview components was to work on the different types of files that I wanted to use
+                        different markdown files for all different pages, but I had to make different folders for all since, 
+                        if I had them in the same folder, it would be rendered on every page. Next was the use of the <br> 
+                        <code>[...slug].astro</code>-element. I had to copy and paste the slug element multiple times, as the
+                        pages use a different data resource in the slug element.
+                    </p>
+                    <img src="" alt="Picture of the JS code for rendering the .md files">
+                </div>
+                <div>
+                    <h4>Grid Component</h4>
+                    <p class="problem-text">
+                        The grid Component was mostly the only component that I copied line for line, for the most part.
+                        At first I had no idea on how the grid worked, since the grid would look different on every page.
+                        Then I just created the Grid component from scratch and modified the variants to fit my vision.
+                    </p>
+                    <div class="images">
+                        <div>
+                            <h5>Grid Variant: simple</h5>
+                            <img src="../img/grid_simple.png" alt="Picture of About page grid">
+                        </div>
+                        <div>
+                            <h5>Grid Variant: Offset</h5>
+                            <img src="../img/grid_offset.png" alt="Picture of Projects page grid">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4>Navigation Components</h4>
+                    <p class="problem-text">
+                        The biggest problem with the navigation bar was the implementation of the mobile navigation bar.
+                        The normal ways of transferring to a mobile view did not work as the navbars background was not 
+                        responsive enough to the point that I fixed it by adding a st amount of pixels for the background 
+                        from the top of the screen.
+                    </p>
+                </div>
+                <div>
+                    <h4>Other Components</h4>
+                    <div class="other-comp">
+                        <div>
+                            <h4>Hero Component</h4>
+                            <p class="problem-text">
+                                The hero component is named similarly to how the first part of the page is named in other JS 
+                                frameworks. It represents the top of the page and is the first thing that people read. In my
+                                case it also hold the Search-Engine Optimization (SEO) for my portfolio. This component didn't 
+                                really pose any problems.
+                            </p>
+                        </div>
+                        <div>
+                            <h4>Footer Component</h4>
+                            <p class="problem-text">
+                                The bottom part of the page. It is also the last thing that people see. I made it as one of the first
+                                components as it was the easiest to implement into the page. The biggest problem with it was the 
+                                transfer to a mobile view. As the footer is really wide, I decided to make the footer divide into
+                                two parts that are on top of each other in the mobile view. Other than that it did not pose any problems.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section sec5" id="conclusion">    
+                <h2>Conclusion</h2>
+                <p class="conclusion-text">
+                    The project was a good introduction to Astro JS. I feel the project will 
+                    help me get more accustomed to other front-end JS frameworks. Since I have an interest in 
+                    working on full-stack development in the future, I feel that this project was a good start.
+                </p>
+                <p class="conclusion-text">
+                    The project was sufficiently difficult and I feel that I learned a lot from it. Of course things did
+                    not go perfectly so, in the future I will plan my websites better and take more time just understanding
+                    JavaScript as a coding language, even if I don't like the language.
+                </p>
+            </div>
+        </main>
+        <footer>
+            <button type="button" class="footer-btn">
+                <a href="../index.html">Homepage</a>
+            </button>
+        </footer>
+    </body>
+</html>

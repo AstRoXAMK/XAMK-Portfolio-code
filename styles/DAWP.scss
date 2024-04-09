@@ -84,7 +84,6 @@ code{
 .sec3{
 
     .timeline{
-        margin-top: 3rem;
         min-height: 100%;
 
         h4{
@@ -96,6 +95,7 @@ code{
         }
 
         .timeline-item{
+            margin: 1rem 0;
             padding: 1.1rem 1rem;
             width: 100%;
             height: relative;
@@ -179,4 +179,4 @@ footer{
     }
 }
 
-@import '../styles/media_Peliprojekti';
+@import '../styles/media_DAWP';

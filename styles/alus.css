@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root {
+  --accent-1: #7a08fa;
+  --accent-2: #a82ffc;
+  --accent-3: #d189ff;
+  --color-white: #cccccc;
+  --color-black: #333333;
+  --color-black-1: #1f1f1f;
+  --color-transparent-accent: rgba(121, 8, 250, 0.103);
+  --color-code: #11ff11;
+}
+
+body {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  color: var(--color-white);
+  background: linear-gradient(to right, #28313b, #485461);
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.header {
+  color: var(--color-white);
+  overflow: hidden;
+  justify-content: center;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: var(--accent-3);
+}
+
+.section {
+  padding: 3rem 18rem;
+  font-size: 1.5rem;
+}
+.section h3 {
+  color: var(--accent-2);
+  font-size: 2.5rem;
+}
+
+.sec1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+}
+.sec1 p {
+  padding: 1.5rem 0;
+}
+.sec1 p span {
+  color: var(--accent-3);
+}
+.sec1 iframe {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sec1 .itchio-site {
+  font-size: 3rem;
+  text-transform: uppercase;
+  background-color: var(--color-black);
+  border-style: outset;
+  border-color: var(--accent-1);
+  height: 15%;
+  text-shadow: none;
+  width: 50%;
+  text-align: center;
+  border-radius: 15px;
+  margin-top: 1.5rem;
+}
+
+.sec3 p {
+  padding: 1.5rem;
+}
+.sec3 .images-for-game {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  margin-top: 3rem;
+}
+.sec3 .images-for-game img {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.sec4 p {
+  padding: 1.5rem 0;
+}
+.sec4 span {
+  color: var(--accent-3);
+}
+.sec4 li {
+  padding-bottom: 1.5rem;
+}
+.sec4 code {
+  color: var(--color-code);
+}
+
+.sec5 {
+  margin-bottom: 6rem;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: var(--color-black-1);
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+footer .footer-btn {
+  background-color: var(--color-black-1);
+  color: var(--color-white);
+  font-size: 1rem;
+  border: none;
+  font-family: inherit;
+  text-align: center;
+  text-decoration: none;
+}
+footer p {
+  font-size: 2rem;
+  padding-top: 1.5rem;
+}
+
+@media screen and (max-width: 1080px) {
+  body {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 1.3em;
+  }
+  .section {
+    padding: 3rem 1rem;
+  }
+  .sec1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .sec1 p {
+    font-size: 1rem;
+  }
+  .sec1 li {
+    font-size: 1rem;
+  }
+  .sec1 .itchio-site {
+    font-size: 1.5rem;
+    margin: 1.5rem auto 3rem auto;
+    height: 11%;
+    width: 70%;
+  }
+  .sec1 iframe {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .sec2 {
+    font-size: 1rem;
+  }
+  .sec3 {
+    font-size: 1rem;
+  }
+  .sec3 .images-for-game {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .sec3 .images-for-game img {
+    width: 100%;
+    margin: auto;
+  }
+  .sec4 {
+    font-size: 1rem;
+  }
+  .sec5 {
+    font-size: 1rem;
+  }
+  footer p {
+    font-size: 1.5rem;
+    padding: 2rem 0;
+  }
+}/*# sourceMappingURL=alus.css.map */

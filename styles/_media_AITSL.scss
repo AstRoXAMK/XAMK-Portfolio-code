@@ -1,0 +1,72 @@
+@media screen and (max-width: 1080px){
+    
+    body{
+        font-size: 1rem;
+        
+        h3{
+            font-size: 1.3em !important;
+        }
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    .section{
+        padding: 2rem 1rem;
+        margin-bottom: 0;
+    }
+
+    .header{
+        font-size: 1rem;
+        padding: 0 1rem;
+
+        .subtitle{
+            font-size: 2rem;
+        }
+    }
+
+    .sec1{
+
+        img{
+            width: 100%;
+        }
+
+        .university-logos{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .sec3{
+
+        .timeline{
+            font-size: 1rem;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: none;
+
+            h4{
+                font-size: 1.1rem;
+            }
+
+            .timeline-left{
+                width: auto;
+            }
+
+            .timeline-right{
+                width: auto;
+            }
+        }
+    }
+
+    .sec5{
+        .conclusion-container{
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 3rem;
+        }
+
+        p{
+            font-size: 1rem !important;
+        }
+    }
+}

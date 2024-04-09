@@ -130,8 +130,9 @@ code {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-top: 3rem;
-  min-height: 100%;
   grid-gap: 2rem;
+  align-items: start;
+  row-gap: 3rem;
 }
 .sec3 .timeline-left h4 {
   font-size: 1.5rem;
@@ -151,7 +152,6 @@ code {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-top: 3rem;
-  min-height: 100%;
   grid-gap: 2rem;
 }
 .sec3 .timeline-right h4 {
@@ -234,11 +234,17 @@ footer a {
   body {
     font-size: 1rem;
   }
+  body p {
+    font-size: 1rem;
+  }
   .section {
     padding: 3rem 1rem;
   }
+  .section h3 {
+    font-size: 1.7rem;
+  }
   .header {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   .sec1 {
     display: grid;
@@ -248,16 +254,17 @@ footer a {
   .sec1 img {
     width: 100%;
   }
-  .sec3 .timeline {
+  .sec3 .timeline-left {
+    width: auto;
     font-size: 1rem;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: none;
   }
-  .sec3 .timeline .timeline-left {
+  .sec3 .timeline-right {
     width: auto;
-  }
-  .sec3 .timeline .timeline-right {
-    width: auto;
+    font-size: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: none;
   }
   .sec5 .conclusion-container {
     grid-template-columns: repeat(1, 1fr);

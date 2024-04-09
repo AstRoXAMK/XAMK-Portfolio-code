@@ -177,10 +177,13 @@ section {
 }
 .portfolio .portfolio-container {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 3rem;
-  margin-top: 3rem;
-  min-height: 100%;
+}
+.portfolio .portfolio-container h2 {
+  color: var(--accent-3);
+  font-size: 3rem;
+  margin-bottom: 2rem;
 }
 .portfolio .portfolio-container .project {
   width: 100%;
@@ -191,6 +194,7 @@ section {
   border-style: outset;
   border-color: var(--accent-2);
   padding-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .portfolio .portfolio-container .project img {
   width: 100%;
@@ -232,6 +236,9 @@ section {
   font-size: 1.3rem;
 }
 .portfolio .portfolio-container .project .game-description a {
+  color: var(--accent-3);
+}
+.portfolio .portfolio-container .project .game-description span {
   color: var(--accent-3);
 }
 .portfolio .portfolio-container .project .my-work {
@@ -302,13 +309,8 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-top: 3rem;
-  min-height: 100%;
+  max-height: 100%;
   grid-gap: 2rem;
-}
-.about .timeline .timeline-time {
-  border-radius: 50px;
-  background-color: var(--accent-1);
-  text-align: center;
 }
 .about .timeline .timeline-item {
   padding: 1.1rem 1rem;
@@ -319,6 +321,12 @@ section {
   border-color: var(--accent-2);
   background-color: var(--color-black);
   position: relative;
+  margin-bottom: 1rem;
+}
+.about .timeline .timeline-item .timeline-time {
+  border-radius: 50px;
+  background-color: var(--accent-1);
+  text-align: center;
 }
 .about .timeline .timeline-item ul {
   font-size: 1.3rem;
@@ -342,13 +350,8 @@ section {
   margin-top: 1rem;
 }
 .about .timeline .timeline-image img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0.5rem;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+  width: 20%;
+  height: 20%;
 }
 .about .timeline .icons {
   font-size: 4rem;
@@ -366,71 +369,27 @@ section {
   font-size: 1.2em;
 }
 
-.contact .contact-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  align-items: center;
-}
-.contact .contact-container .left-contact {
+.contact {
   font-size: 1.6rem;
   width: 100%;
+  text-align: center;
 }
-.contact .contact-container .left-contact .icon {
+.contact .icon {
   font-size: 1.6rem;
 }
-.contact .contact-container .left-contact .icon i {
+.contact .icon i {
   color: var(--accent-3);
 }
-.contact .contact-container .left-contact .contact-item {
+.contact .contact-item {
   text-transform: uppercase;
+  margin-bottom: 1rem;
 }
-.contact .contact-container .left-contact .contact-item .e-mail {
+.contact .contact-item .e-mail {
   text-transform: lowercase;
 }
-.contact .contact-container .left-contact p {
-  margin: 7px auto;
+.contact p {
+  margin: auto;
   text-transform: capitalize;
-}
-.contact .contact-container .right-contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.contact .contact-container .right-contact .input-text {
-  margin: 1em auto;
-}
-.contact .contact-container .right-contact .input-text input, .contact .contact-container .right-contact .input-text textarea {
-  font-weight: inherit;
-  font-size: inherit;
-  font-family: inherit;
-  padding: 0.8rem 1.1rem;
-  outline: none;
-  background-color: var(--color-black);
-  width: 100%;
-  color: var(--color-white);
-  resize: none;
-  border-style: outset;
-  border-radius: 14px;
-  border-color: var(--accent-1);
-}
-.contact .contact-container .right-contact .top-input {
-  display: flex;
-}
-.contact .contact-container .right-contact .top-input :last-child {
-  margin-left: 1.5rem;
-}
-.contact .contact-container .right-contact .submit-btn {
-  text-transform: uppercase;
-  background-color: var(--color-black);
-  border-style: outset;
-  font-size: 3rem;
-  border-color: var(--accent-1);
-  height: 12%;
-  text-shadow: none;
-  width: 40%;
-  text-align: center;
-  border-radius: 15px;
 }
 
 .contact-icons {
@@ -438,7 +397,7 @@ section {
   width: 100%;
   justify-content: center;
   align-items: center;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 .contact-icons a {
   display: flex;
@@ -460,7 +419,7 @@ section {
   color: var(--color-black);
 }
 .contact-icons .contact-icon {
-  margin: 0 1.5rem;
+  margin: 1.5rem auto;
   font-size: 2rem;
 }
 
@@ -513,21 +472,20 @@ section {
   color: var(--color-black);
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1079px) {
   body {
     font-size: 1rem;
-  }
-  .main-title {
-    font-size: 2rem !important;
-    padding: 0 !important;
   }
   header {
     padding: 0 !important;
   }
+  .main-title h2 {
+    font-size: 2rem;
+  }
   .header ul {
-    line-height: 90% !important;
-    width: 90%;
-    top: 0;
+    line-height: 100% !important;
+    width: 100%;
+    margin: 0.2rem 0;
   }
   .header ul li {
     font-size: 1.1rem !important;
@@ -549,18 +507,18 @@ section {
   }
   .header-info .right-header .text {
     line-height: 100% !important;
-    font-size: 1.5rem !important;
+    font-size: 1rem !important;
   }
   .header-info .right-header .cv-download {
     height: 100% !important;
     width: 60% !important;
-    margin: 1rem auto 4.5rem auto !important;
+    margin: 1rem auto 2rem auto !important;
   }
   .header-info .right-header a {
     font-size: 1.5rem !important;
   }
   .header-info .left-header .image {
-    margin: 0 auto 7rem auto !important;
+    margin: auto !important;
     width: 100%;
     grid-row: 2;
   }
@@ -586,6 +544,10 @@ section {
     margin: 0 auto 4rem auto !important;
     justify-content: center;
   }
+  .portfolio-container .project img {
+    width: 75%;
+    height: 30%;
+  }
   .portfolio-container .project .game-name {
     font-size: 1.4rem !important;
   }
@@ -593,10 +555,10 @@ section {
     font-size: 1rem !important;
   }
   .portfolio-container .project p {
-    font-size: 1.2rem !important;
+    font-size: 1rem !important;
   }
   .portfolio-container .project .my-work {
-    font-size: 1.2rem !important;
+    font-size: 1rem !important;
   }
   .portfolio-container .project .icon {
     margin-bottom: auto !important;
@@ -665,76 +627,45 @@ section {
     font-size: 1.2rem;
   }
   .timeline .timeline-item p {
-    font-size: 1.1rem;
+    font-size: 1rem;
+  }
+  .timeline .timeline-item p span {
+    color: var(--accent-3);
   }
   .timeline .timeline-item span {
-    font-size: 1.1rem !important;
+    font-size: 1.2rem !important;
+  }
+  .timeline .timeline-item li {
+    font-size: 1.1rem;
   }
   .timeline .timeline-item .icons {
     font-size: 2.5rem !important;
   }
-  .contact {
-    grid-template-columns: 1fr !important;
-    justify-content: center !important;
-    align-items: center !important;
-  }
-  .contact h2 {
-    font-size: 2.5rem;
-  }
-  .contact .left-contact {
-    width: 100% !important;
-    grid-row: 1 !important;
-    padding-bottom: 0.5rem;
-    text-align: center;
-    align-items: center;
-  }
-  .contact .left-contact .icon {
+  .contact .icon {
     text-align: center;
     font-size: 1.3rem !important;
   }
-  .contact .left-contact p {
-    font-size: 1.3rem;
+  .contact p {
+    margin: auto;
+    font-size: 1rem;
     text-align: center;
   }
-  .contact .right-contact {
-    grid-row: 2;
-    align-items: center !important;
-    margin: auto 0 auto 5% !important;
-  }
-  .contact .right-contact .input-text {
-    font-size: 1rem;
-  }
-  .contact .right-contact input {
-    height: 75px !important;
-  }
-  .contact .right-contact textarea {
-    height: 200px !important;
-  }
-  .contact .right-contact .top-input {
-    flex-direction: column;
-  }
-  .contact .right-contact .top-input :last-child {
-    margin-left: 0 !important;
-    margin-top: 1.5rem;
-  }
-  .contact .submit-btn {
-    height: 7% !important;
-    width: 100% !important;
-    font-size: 1.5rem !important;
-    margin: auto;
-  }
   .contact-icons {
-    margin: 2rem auto 4.5rem auto;
+    margin: 0 auto;
   }
   .contact-icons a {
+    margin: 0 1rem;
     width: 55px;
     height: 55px;
   }
   .contact-icons a i {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
   footer {
-    margin-bottom: 6rem;
+    margin-bottom: auto;
+  }
+  footer p {
+    margin-bottom: 3rem;
   }
   .controls {
     top: auto;
@@ -744,7 +675,7 @@ section {
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    height: 10%;
+    height: 4rem;
     background-color: var(--color-black);
   }
   .controls .active-btn {
@@ -756,7 +687,7 @@ section {
     height: 50px;
   }
   .controls .control i {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
   .controls .control:hover {
     background-color: var(--color-black);
@@ -830,11 +761,11 @@ section {
   .contact-icons a i {
     font-size: 2.7rem;
   }
-  .control {
-    width: 70px !important;
-    height: 70px !important;
+  .controls {
+    width: 0.5rem !important;
+    height: 0.5rem !important;
   }
-  .control i {
+  .controls i {
     font-size: 1.8rem !important;
   }
 }/*# sourceMappingURL=style.css.map */

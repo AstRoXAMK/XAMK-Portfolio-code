@@ -80,10 +80,16 @@ code {
   grid-gap: 1.5rem;
 }
 .sec3 .timeline h4 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: var(--color-white);
 }
 .sec3 .timeline h4 span {
+  color: var(--accent-3);
+}
+.sec3 .timeline p {
+  padding-top: 1rem;
+}
+.sec3 .timeline p a {
   color: var(--accent-3);
 }
 .sec3 .timeline .timeline-item {
@@ -97,22 +103,11 @@ code {
   position: relative;
 }
 
-.sec4 .timeline-problems {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-top: 3rem;
-  min-height: 100%;
-  grid-gap: 2rem;
-}
-.sec4 .timeline-problems .timeline-problems-item {
-  padding: 1.1rem 1rem;
+.sec4 img {
   width: 100%;
-  height: relative;
-  border-radius: 14px;
-  border-style: outset;
-  border-color: var(--accent-2);
-  background-color: var(--color-black);
-  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 1rem 0;
 }
 
 .sec5 {
@@ -162,24 +157,37 @@ footer a {
   body {
     font-size: 1rem;
   }
+  body h3 {
+    font-size: 1.3em !important;
+  }
+  p {
+    font-size: 1rem;
+  }
   .section {
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
+    margin-bottom: 0;
   }
   .header {
-    font-size: 1.3rem;
+    font-size: 1rem;
+    padding: 0 1rem;
   }
-  .sec1 {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: none;
+  .header .subtitle {
+    font-size: 2rem;
   }
   .sec1 img {
     width: 100%;
+  }
+  .sec1 .university-logos {
+    display: flex;
+    flex-direction: column;
   }
   .sec3 .timeline {
     font-size: 1rem;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: none;
+  }
+  .sec3 .timeline h4 {
+    font-size: 1.1rem;
   }
   .sec3 .timeline .timeline-left {
     width: auto;

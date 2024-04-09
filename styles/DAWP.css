@@ -78,7 +78,6 @@ code {
 }
 
 .sec3 .timeline {
-  margin-top: 3rem;
   min-height: 100%;
 }
 .sec3 .timeline h4 {
@@ -89,6 +88,7 @@ code {
   color: var(--accent-3);
 }
 .sec3 .timeline .timeline-item {
+  margin: 1rem 0;
   padding: 1.1rem 1rem;
   width: 100%;
   height: relative;
@@ -164,10 +164,23 @@ footer a {
   body {
     font-size: 1rem;
   }
+  body p {
+    font-size: 1rem;
+  }
+  body ul {
+    font-size: 1rem;
+  }
   .section {
     padding: 3rem 1rem;
+    margin-bottom: 0;
+  }
+  .section h3 {
+    font-size: 1.7rem;
   }
   .header {
+    font-size: 1rem;
+  }
+  .header span {
     font-size: 1.3rem;
   }
   .sec1 {
@@ -183,11 +196,8 @@ footer a {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: none;
   }
-  .sec3 .timeline .timeline-left {
-    width: auto;
-  }
-  .sec3 .timeline .timeline-right {
-    width: auto;
+  .sec3 .timeline .timeline-item h4 {
+    font-size: 1.3rem;
   }
   .sec5 .conclusion-container {
     grid-template-columns: repeat(1, 1fr);

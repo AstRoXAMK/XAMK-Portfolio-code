@@ -53,13 +53,12 @@ a{
 }
 
 .sec2{
-
     .projects-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        margin-top: 3rem;
         min-height: 100%;
         grid-gap: 2rem;
+        row-gap: 3rem;
 
         h4{
             font-size: 1.7rem;

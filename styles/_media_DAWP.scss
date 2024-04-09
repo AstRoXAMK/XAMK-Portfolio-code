@@ -1,0 +1,65 @@
+@media screen and (max-width: 1080px){
+    
+    body{
+        font-size: 1rem;
+
+        p{
+            font-size: 1rem;
+        }
+
+        ul{
+            font-size: 1rem;
+        }
+    }
+
+    .section{
+        padding: 3rem 1rem;
+        margin-bottom: 0;
+
+        h3{
+            font-size: 1.7rem;
+        }
+    }
+
+    .header{
+        font-size: 1rem;
+        span{
+            font-size: 1.3rem;
+        }
+    }
+
+    .sec1{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: none;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .sec3{
+        .timeline{
+            font-size: 1rem;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: none;
+
+            .timeline-item{
+                h4{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+
+    .sec5{
+        .conclusion-container{
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 3rem;
+        }
+
+        p{
+            font-size: 1rem !important;
+        }
+    }
+}

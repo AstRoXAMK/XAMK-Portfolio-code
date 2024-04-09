@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root{
+    --accent-1: #7a08fa;
+    --accent-2: #a82ffc;
+    --accent-3: #d189ff;
+    --color-white: #cccccc;
+    --color-black: #333333;
+    --color-black-1: #1f1f1f;
+    --color-black-2: #333333af;
+    --color-transparent-accent: rgba(121, 8, 250, 0.103);
+    --color-complete: #55ff55;
+    --color-working: #f1972f;
+    --color-no-work: #ff5555;
+}
+
+body{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: var(--color-white);
+    background: linear-gradient(to right, #28313b, #485461);
+}
+
+a{
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    font-family: inherit;
+}
+
+.header{
+    color: var(--color-white);
+    overflow: hidden;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+
+}
+
+.subtitle{
+    font-size: 1.5rem;
+    color: var(--accent-3);
+}
+
+.section{
+    padding: 3rem 18rem;
+    font-size: 1.5rem;
+
+    h3{
+        color: var(--accent-2);
+        font-size: 2.5rem;
+    }
+}
+
+.sec1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+
+    .additional{
+        padding: 1rem 0;
+        a{
+            color: var(--accent-2);
+        }
+    }
+
+    img{
+        background-color: var(--color-black-2);
+        border-style: outset;
+        border-color: var(--accent-1);
+        height: 100%;
+        text-shadow: none;
+        width: 100%;
+        text-align: center;
+        border-radius: 15px;
+    }
+}
+
+.sec2{
+    h2{
+        color: var(--accent-2);
+        font-size: 2.5rem;
+    }
+
+    ul{
+        padding: 2rem 0;
+    }
+}
+
+.sec3{
+    .progress{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 3rem;
+        max-height: 100%;
+        gap: 2rem;
+
+        .title{
+            color: var(--accent-2);
+            font-size: 2rem;
+            padding-bottom: 1rem;
+        }
+
+        .progress-item{
+            padding: 1rem 1rem;
+            width: 100%;
+            height: relative;
+            border-radius: 14px;
+            border-style: outset;
+            border-color: var(--accent-2);
+            background-color: var(--color-black);
+            position: relative;
+            margin-bottom: 1rem;
+    
+            .img-container{
+                margin: 1rem 0;
+                img{
+                    width: 100%;
+                }
+            }
+
+            ul{
+                padding: 1rem 0;
+            }
+        }
+    }
+
+    .complete{
+        color: var(--color-complete);
+    }
+
+    .working{
+        color: var(--color-working);
+    }
+    
+    .no-work{
+        color: var(--color-no-work);
+    }
+}
+
+.sec4{
+    h2{
+        color: var(--accent-2);
+        font-size: 2.5rem;
+    }
+
+    h4{
+        color: var(--accent-3);
+        font-size: 2rem;
+    }
+
+    div{
+        margin: 2rem 0;
+    }
+
+    code{
+        color: var(--accent-3);
+    }
+
+    .problem-text{
+        padding: 1rem 0;
+        a{
+            color: var(--color-no-work);
+        }
+    }
+
+    .images{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin-top: 2rem;
+
+        h5{
+            color: var(--accent-1);
+            font-size: 2rem;
+        }
+
+        img{
+            width: 100%;
+            border-radius: 15px;
+        }
+    }
+
+    .other-image{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        margin-top: 2rem;
+
+        h5{
+            color: var(--accent-1);
+            font-size: 2rem;
+        }
+
+        img{
+            width: 75%;
+        }
+    }
+
+    .other-comp{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin-top: 2rem;
+
+        h4{
+            color: var(--accent-3);
+            font-size: 1.75rem;
+        }
+    }
+}
+
+.sec5{
+    margin-bottom: 6rem;
+
+    h2{
+        color: var(--accent-2);
+        font-size: 2.5rem;
+    }
+
+    p{
+        padding: 1rem 0;
+    }
+}
+
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: var(--color-black-1);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .footer-btn{
+        background-color: var(--color-black-1);
+        color: var(--color-white);
+        font-size: 1.4rem;
+        border: none;
+        font-family: inherit;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    a{
+        padding: 40% 0%;
+    }
+}
+
+@import '../styles/media_Astro'

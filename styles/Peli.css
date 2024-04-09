@@ -54,9 +54,9 @@ a {
 .sec2 .projects-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-top: 3rem;
   min-height: 100%;
   grid-gap: 2rem;
+  row-gap: 3rem;
 }
 .sec2 .projects-container h4 {
   font-size: 1.7rem;
@@ -150,6 +150,12 @@ footer a {
   }
   .sec1 {
     margin-bottom: 0;
+  }
+  .sec1 h3 {
+    font-size: 1.5rem;
+  }
+  .sec1 p {
+    font-size: 1rem;
   }
   .sec2 .projects-container {
     display: grid;
